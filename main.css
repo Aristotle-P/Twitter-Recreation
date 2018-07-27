@@ -1,0 +1,236 @@
+*, *::before, *::after {
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* General */
+
+body {
+    background-color: #e6ecf0;
+}
+
+/* Navbar Styling */
+
+.flex-container li {
+    list-style: none;
+    cursor: pointer;
+}
+.flex-container li:hover {
+    color: #0084FF;
+}
+.flex-container {
+    display: flex;
+    display: fixed;
+    height: 46px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid #a9a9a9;
+    font-family: 'Open-Sans', Arial, sans-serif;
+    background-color: #fff;
+}
+.twitter-bird {
+    margin-left: auto;
+    margin-right: auto;
+    color: #0084FF
+}
+.home-cluster {
+    padding-left: 25px;
+    font-weight: bold;
+    color: #66757f;
+}
+.home-cluster i {
+    padding-right: 8px;
+}
+.home {
+    margin-left: 32px;
+}
+.search-cluster {
+    margin-right: 18px;
+}
+.spacer {
+    margin-right: 90px;
+}
+.btn {
+    border: none;
+    background-color: #0084FF;
+    color: #fff;
+    height: 30px;
+    width: 70px;
+    border-radius: 100px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.search {
+    height: 25px;
+    width: 250px;
+    border: 1px solid #e6ecf0;
+    background-color: #f5f8fa;
+    border-radius: 100px;
+    text-align: center;
+}
+.navbar-icon {
+    font-size: 30px;
+}
+
+/* Grid Styling */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 1em;
+    margin-top: .5em;
+    margin-left: 5em;
+    margin-right: 7em;
+    grid-template-areas: 
+    'left-1 left-1 left-1 main main main main main main right-1 right-1 right-1'
+    'left-1 left-1 left-1 main main main main main main right-1 right-1 right-1'
+    'left-1 left-1 left-1 main main main main main main right-1 right-1 right-1'
+    'left-2 left-2 left-2 main main main main main main right-1 right-1 right-1'
+    'left-2 left-2 left-2 main main main main main main right-2 right-2 right-2'
+    'left-2 left-2 left-2 main main main main main main right-2 right-2 right-2'
+    'left-2 left-2 left-2 main main main main main main . . .'
+    'left-2 left-2 left-2 main main main main main main . . .'
+    'left-2 left-2 left-2 main main main main main main . . .'
+    'left-2 left-2 left-2 main main main main main main . . .'
+    'left-2 left-2 left-2 main main main main main main . . .'
+    'left-2 left-2 left-2 main main main main main main . . .'
+}
+.header { grid-area: header; }
+.left-1 { grid-area: left-1; }
+.left-2 { grid-area: left-2; }
+.main { grid-area: main; }
+.right-1 { grid-area: right-1; }
+.right-2 { grid-area: right-2; }
+.footer { grid-area: footer; }
+
+/* Who to follow */
+.container aside, section {
+    border: 1px solid #333;
+}
+.right-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.right-1 div {
+    padding: 14px 0;
+}
+.suggested-user-1 h3 {
+    margin-left: 12px;
+    padding-bottom: 8px;
+}
+.wtf-user {
+    font-size: 50px;
+    margin-left: 15px;
+    color: #0084FF;
+}
+.right-1 a {
+    text-decoration: none;
+    color: #333;
+}
+.follow-btn {
+    background: #fff;
+    border: 1px solid #0084FF;
+    height: 22px;
+    width: 68px;
+    border-radius: 100px;
+    color: #0084FF;
+    margin-left: 80px;
+}
+
+/* Copyrights */
+.right-2 p {
+    padding: 10px;
+    color: #657786;
+    font-size: 14px;
+}
+
+/* Tweets */
+.main {
+    background-color: #fff;
+}
+.tweets i, .tweets h6, .tweets p {
+    padding: 8px;
+}
+.avatar {
+    font-size: 44px;
+}
+.username-avatar i, .username-avatar h6 {
+    float: left;
+}
+.username-avatar::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/* Trends */
+.left-2 h6 {
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.change {
+    font-size: 12px;
+    font-weight: 400;
+    color: #0084FF;
+    margin-left: 8px;
+}
+.trends a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0084FF;
+}
+.trends p {
+    font-size: 12px;
+    color: #657786;
+}
+.trends {
+    margin-left: 12px;
+}
+
+/* Profile Sidebar */
+.info-header {
+    display: flex;
+    align-items: center;
+}
+.twitter-header {
+    max-width: 900px;
+    max-height: 130px;
+}
+.info-name h6 {
+    float: right;
+    font-size: 20px;
+    margin-right: 150px;
+}
+.info-name i {
+    margin-left: 6px;
+    font-size: 60px;
+    margin-top: -30px;
+}
+.info-name p {
+    margin-left: 70px;
+    margin-top: -10px;
+    color: #657786;
+    padding-bottom: 20px;
+}
+.info-tweets ul {
+    list-style: none;
+}
+.info-tweets li {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #66757f;
+    font-weight: bold;
+}
+.info-tweets-numbers li {
+    display: inline;
+    padding-right: 30px;
+    margin-left: 18px;
+    color: #0084FF;
+    font-weight: bold;
+}
